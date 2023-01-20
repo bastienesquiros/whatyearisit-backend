@@ -7,7 +7,7 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/year', (req, res) => {
-    const year = Date.getYear()
+    const year = new Date.getYear()
     res.json({ year: year })
 })
 
